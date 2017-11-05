@@ -1,11 +1,13 @@
 package com.example.android.crypto_currency.utilities;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.android.crypto_currency.R;
@@ -50,6 +52,13 @@ public class CryptoAdapter extends ArrayAdapter<Crypto> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.crypto_list, parent, false);
         }
+//
+//        if(position % 2 == 0){
+//            LinearLayout layout = (LinearLayout) convertView.findViewById(R.id.crypto_list);
+//
+//            layout.setBackgroundColor(convertView.getContext().getColor(R.color.colorPrimary)
+//                    .getColour(R.color.colorPrimary));
+//        }
 
         TextView currency = (TextView) convertView.findViewById(R.id.currency);
         TextView btc = (TextView) convertView.findViewById(R.id.btc);

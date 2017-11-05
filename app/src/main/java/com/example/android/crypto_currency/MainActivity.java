@@ -152,9 +152,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 current_currency = currency;
 
-//                Intent developerIntent = new Intent(MainActivity.this, ShowCurrencyActivity.class);
+                Intent developerIntent = new Intent(MainActivity.this, ConversionActivity.class);
 
-//                startActivity(developerIntent);
+                startActivity(developerIntent);
 
 
 
